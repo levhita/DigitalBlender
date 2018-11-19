@@ -8,9 +8,10 @@ BASE_URL='https://api.digitalocean.com/v2'
 #SSH_FINGERPRINT=<Get your fingerprint from https://cloud.digitalocean.com/account/security>
 
 SECRETFILE=.digitalocean
-SIZE_SLUG="s-1vcpu-1gb"
+#SIZE_SLUG="s-1vcpu-1gb"
+SIZE_SLUG="s-12vcpu-48gb"
 IMAGE="ubuntu-18-04-x64"
-REGION="nyc"
+REGION="nyc3"
 
 if [ -e $SECRETFILE ]; then
     . $SECRETFILE
